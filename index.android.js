@@ -14,20 +14,4 @@ import React, {
 
 let imapp = require('./components/App');
 
-class App extends Component {
-    render() {
-        let html = '<h1>title</h1>';
-        return (
-            <WebView
-                style={{backgroundColor: '#FFF', height: 400, flex: 1}}
-                automaticallyAdjustContentInsets={false}
-                html={html}
-                javaScriptEnabledAndroid={true}
-                scalesPageToFit={true}
-            />
-        )
-    }
-}
-
-//AppRegistry.registerComponent('imapp', () => App);
 AppRegistry.registerComponent('imapp', () => imapp);
